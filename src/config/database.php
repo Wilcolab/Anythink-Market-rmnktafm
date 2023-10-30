@@ -42,6 +42,11 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
+        'mongodb' => [
+            'driver' => 'mongodb',
+              'dsn' => env('MONGODB_URI'),
+            'database' => 'moviesquest',
+            ],
 
         'mysql' => [
             'driver' => 'mysql',
